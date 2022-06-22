@@ -1,0 +1,63 @@
+.comingSoon {
+  background-color: black;
+  background-image: url("https://i.imgur.com/P5PIvfB.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.comingSoon h1 {
+  font-size: 62px;
+  color: darkred;
+  text-align: center;
+}
+
+.comingSoonContainer {
+  color: white;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  max-width: 800px;
+  margin: auto;
+  min-height: 500px;
+}
+
+.comingSoonContainer h2,
+.comingSoonHover {
+  margin: 10px;
+  text-align: center;
+}
+
+.comingSoonHover {
+  font-size: 12px;
+}
+
+.comingSoonReveal {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.killers,
+.survivors {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.killers img,
+.survivors img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 10px;
+}
+
+.killer,
+.survivor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
