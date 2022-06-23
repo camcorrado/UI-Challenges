@@ -65,9 +65,7 @@ export default class Challenge16 extends Component {
                     {pokemon.name.includes("Nidoran") ? (
                       <p>Nidoran</p>
                     ) : (
-                      <p>
-                        <p>{pokemon.name}</p>
-                      </p>
+                      <p>{pokemon.name}</p>
                     )}
                   </a>
                 </li>
