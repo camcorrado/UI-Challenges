@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import App from "./App.js";
 import Challenge1 from "./Components/Challenge1/Challenge1";
 import Challenge2 from "./Components/Challenge2/Challenge2";
