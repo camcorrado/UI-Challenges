@@ -118,3 +118,10 @@ div.termsOfService {
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 600px) {
+  div.termsOfService {
+    display: flex;
+    flex-direction: column;
+  }
+}

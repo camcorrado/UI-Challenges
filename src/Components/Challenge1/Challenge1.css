@@ -62,3 +62,16 @@
 .contact > ul > li > a {
   color: black;
 }
+
+@media (max-width: 600px) {
+  .profilePic > img {
+    max-width: 125px;
+  }
+
+  .profileInfo > h1 {
+    font-size: 20px;
+  }
+  .profileInfo > p {
+    font-size: 16px;
+  }
+}

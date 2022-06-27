@@ -119,3 +119,15 @@
 .alarmOption .faIcon {
   font-size: 30px;
 }
+
+@media (max-width: 600px) {
+  .homeDashboardContainer {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .insideTemp {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+  }
+}

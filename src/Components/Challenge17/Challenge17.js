@@ -152,7 +152,7 @@ export default class Challenge17 extends Component {
                 >
                   <FontAwesomeIcon icon={faCaretDown} className="faIcon" />
                 </div>
-                <p className="degrees">{temp}</p>
+                <p className="degrees">{temp}°</p>
                 <div
                   className="tempUp"
                   onClick={() => this.setTemp("up")}

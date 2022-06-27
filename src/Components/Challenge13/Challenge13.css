@@ -116,3 +116,9 @@ div.crash {
   width: 20%;
   margin: auto;
 }
+
+@media (max-width: 600px) {
+  .leaderboardInputs > input {
+    transform: scale(2);
+  }
+}
