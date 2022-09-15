@@ -108,6 +108,7 @@ export default class Challenge8 extends Component {
             <input
               type="color"
               id="backgroundColor"
+              aria-labelledby="background color"
               name="backgroundColor"
               defaultValue="#000033"
               onChange={(e) => this.handleColorChange(e.target.value)}

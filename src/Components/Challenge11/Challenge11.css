@@ -21,7 +21,7 @@
   width: 150px;
   height: 75px;
   position: relative;
-  background: cornflowerblue;
+  background: #1551b7;
   border-radius: 10px;
 }
 
@@ -33,7 +33,7 @@
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-top-color: cornflowerblue;
+  border-top-color: #1551b7;
   border-bottom: 0;
   border-right: 0;
   margin-left: -10px;
@@ -68,7 +68,7 @@
 .sadButton {
   font-size: 16px;
   height: 32px;
-  color: red;
+  color: darkred;
   background-color: white;
   border: 1px solid rgb(175, 175, 175);
   border-radius: 4px;

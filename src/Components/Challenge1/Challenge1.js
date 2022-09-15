@@ -23,13 +23,14 @@ export default class Challenge1 extends Component {
             <div className="contact">
               <ul className="navLinks">
                 <li className="gmail">
-                  <a href="mailto:camcorrado@gmail.com">
+                  <a href="mailto:camcorrado@gmail.com" aria-label="send email">
                     <FontAwesomeIcon icon={faEnvelope} className="faIcon" />
                   </a>
                 </li>
                 <li className="github">
                   <a
                     href="https://github.com/camcorrado"
+                    aria-label="github profile"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -40,6 +41,7 @@ export default class Challenge1 extends Component {
                   <a
                     href="https://camcorradoportfolio.s3.amazonaws.com/Cameron+Corrado's+Resume.pdf"
                     target="_blank"
+                    aria-label="view resume"
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon

@@ -89,6 +89,7 @@ export default class Challenge5 extends Component {
               <textarea
                 name="message"
                 id="message"
+                aria-labelledby="message"
                 rows="15"
                 aria-required="true"
                 maxLength="120"

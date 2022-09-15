@@ -70,6 +70,7 @@ export default class Challenge2 extends Component {
             <input
               type="text"
               name="firstName"
+              aria-labelledby="first name"
               id="firstName"
               maxLength="20"
               minLength="2"
@@ -80,6 +81,7 @@ export default class Challenge2 extends Component {
             <input
               type="text"
               name="lastName"
+              aria-labelledby="last name"
               id="lastName"
               maxLength="20"
               minLength="2"
@@ -92,6 +94,7 @@ export default class Challenge2 extends Component {
             <input
               type="email"
               name="email"
+              aria-labelledby="email"
               id="email"
               maxLength="120"
               placeholder="Email"
@@ -103,6 +106,7 @@ export default class Challenge2 extends Component {
             <input
               type="password"
               name="password"
+              aria-labelledby="password"
               id="password"
               maxLength="20"
               placeholder="Password"
@@ -114,6 +118,7 @@ export default class Challenge2 extends Component {
             <input
               type="password"
               name="confirmPassword"
+              aria-labelledby="confirm password"
               id="confirmPassword"
               maxLength="20"
               placeholder="Confirm Password"
@@ -128,6 +133,7 @@ export default class Challenge2 extends Component {
             <input
               type="checkbox"
               name="terms"
+              aria-labelledby="terms of service"
               id="terms"
               aria-required="true"
               required

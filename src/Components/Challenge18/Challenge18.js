@@ -54,8 +54,8 @@ export default class Challenge18 extends Component {
             <div className="nameInputs">
               <input
                 type="text"
-                name="firstName"
-                id="firstName"
+                name="firstName18"
+                id="firstName18"
                 maxLength="20"
                 minLength="2"
                 placeholder="First Name"
@@ -64,8 +64,8 @@ export default class Challenge18 extends Component {
               />
               <input
                 type="text"
-                name="lastName"
-                id="lastName"
+                name="lastName18"
+                id="lastName18"
                 maxLength="20"
                 minLength="2"
                 placeholder="Last Name"
@@ -76,8 +76,8 @@ export default class Challenge18 extends Component {
             <div className="emailInput">
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="email18"
+                id="email18"
                 maxLength="120"
                 placeholder="Email"
                 aria-required="true"
@@ -86,8 +86,8 @@ export default class Challenge18 extends Component {
             </div>
             <div className="messageInput">
               <textarea
-                name="message"
-                id="message"
+                name="message18"
+                id="message18"
                 rows="15"
                 aria-required="true"
                 maxLength="500"

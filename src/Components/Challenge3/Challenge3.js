@@ -36,6 +36,7 @@ export default class Challenge3 extends Component {
           >
             <button
               className={light ? `switchOn` : `switchOff`}
+              aria-label="On/Off Switch"
               onClick={() => this.handleClick()}
             ></button>
           </div>

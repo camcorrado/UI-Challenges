@@ -11,7 +11,7 @@ export default class Challenge7 extends Component {
     started: false,
     seconds: 10,
     message: "",
-    outcomeColor: "gray",
+    outcomeColor: "#4d4d4d",
     buttons: [],
     buttonsClicked: {
       1: false,
@@ -25,7 +25,7 @@ export default class Challenge7 extends Component {
     await this.setState({
       message: "",
       started: true,
-      outcomeColor: "gray",
+      outcomeColor: "#4d4d4d",
     });
     this.shuffle([
       { buttonNum: 1 },
@@ -77,7 +77,7 @@ export default class Challenge7 extends Component {
       seconds: seconds,
     });
     if (seconds === 0) {
-      this.setState({ message: `You lose!`, outcomeColor: "crimson" });
+      this.setState({ message: `You lose!`, outcomeColor: "darkred" });
       this.stopTimer();
     }
   };
@@ -138,7 +138,7 @@ export default class Challenge7 extends Component {
           4: true,
         },
         message: `You're a winner, baby!`,
-        outcomeColor: "goldenrod",
+        outcomeColor: "darkgreen",
       });
       this.stopTimer();
     } else {

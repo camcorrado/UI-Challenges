@@ -48,7 +48,10 @@ export default class Challenge20 extends Component {
               <p>20 June, 2022</p>
             </div>
             <div className="blogPostLikeButton">
-              <button onClick={() => this.handleClickLike()}>
+              <button
+                aria-label="like button"
+                onClick={() => this.handleClickLike()}
+              >
                 {liked === true ? (
                   <FontAwesomeIcon
                     icon={faHeart}

@@ -13,6 +13,7 @@ export default class Challenge9 extends Component {
           <div className="albumArtworkContainer">
             <img
               src="https://images.genius.com/519b6e1cac5c6574c3c336d94cb57322.1000x1000x1.jpg"
+              rel="preconnect"
               className="albumArtwork"
               alt="Moonlight by Phantoms album artwork"
             />
@@ -60,6 +61,7 @@ export default class Challenge9 extends Component {
             </div>
             <iframe
               src="https://open.spotify.com/embed/album/4D9zTI1QW0QXGGDhWhxlLG"
+              rel="preconnect"
               width="300"
               height="380"
               frameBorder="0"

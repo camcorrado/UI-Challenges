@@ -97,14 +97,28 @@ export default class Challenge13 extends Component {
                 type="radio"
                 id="waluigi"
                 name="characterVote"
+                aria-labelledby="waluigi"
                 value="waluigi"
               />
-              <input type="radio" id="geno" name="characterVote" value="geno" />
-              <input type="radio" id="sora" name="characterVote" value="sora" />
+              <input
+                type="radio"
+                id="geno"
+                name="characterVote"
+                aria-labelledby="geno"
+                value="geno"
+              />
+              <input
+                type="radio"
+                id="sora"
+                name="characterVote"
+                aria-labelledby="sora"
+                value="sora"
+              />
               <input
                 type="radio"
                 id="crash"
                 name="characterVote"
+                aria-labelledby="crash"
                 value="crash"
               />
             </div>
