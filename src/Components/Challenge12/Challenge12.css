@@ -13,6 +13,16 @@
   background-color: white;
 }
 
+.checkoutTable > h1 {
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0px auto 15px auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
 .shippingInputs > h2,
 .billingInputs > h2,
 .cartHeader > h2 {
@@ -33,7 +43,17 @@
 }
 
 .checkoutForm {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
   flex-basis: 100%;
+}
+
+#formSuccess {
+  border: none;
 }
 
 .checkoutForm > div > div > input {

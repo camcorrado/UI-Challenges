@@ -47,6 +47,7 @@
   animation: gradient 10s ease infinite;
   background-size: 200%;
   font-size: 72px;
+  margin: 5px;
 }
 
 button.correct {

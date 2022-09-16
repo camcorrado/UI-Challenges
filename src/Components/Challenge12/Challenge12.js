@@ -11,12 +11,12 @@ import {
 export default class Challenge12 extends Component {
   state = {
     error: null,
-    success: null,
+    success: false,
   };
 
   handleSubmit = (ev) => {
     ev.preventDefault();
-    this.setState({ error: null, success: null });
+    this.setState({ error: null, success: false });
     const statesArray = [
       "AL",
       "AK",
@@ -99,6 +99,7 @@ export default class Challenge12 extends Component {
     let date = new Date();
     let currentYear = date.getFullYear().toString().slice(2, 4);
     let currentMonth = date.getMonth() + 1;
+    let capitalizedState = state.value.toUpperCase();
 
     let letters = /^[A-Za-z]+$/;
 
@@ -122,7 +123,7 @@ export default class Challenge12 extends Component {
       this.setState({
         error: `Please enter a valid phone number.`,
       });
-    } else if (!statesArray.includes(state.value)) {
+    } else if (!statesArray.includes(capitalizedState)) {
       this.setState({ error: `Please enter a valid state.` });
     } else if (!billingFirstName.value.match(letters)) {
       this.setState({
@@ -157,7 +158,7 @@ export default class Challenge12 extends Component {
     ) {
       this.setState({ error: `Please enter a valid expiration date.` });
     } else {
-      this.setState({ success: `Your order has been processed!` });
+      this.setState({ success: true });
       shippingFirstName.value = "";
       shippingLastName.value = "";
       streetAddress.value = "";
@@ -173,6 +174,14 @@ export default class Challenge12 extends Component {
       expirationMonth.value = "";
       expirationYear.value = "";
     }
+  };
+
+  handleReset = (ev) => {
+    ev.preventDefault();
+    this.setState({
+      success: false,
+      error: null,
+    });
   };
 
   handleChangeInputZipcode = (ev) => {
@@ -237,206 +246,225 @@ export default class Challenge12 extends Component {
           <h2 className="challengeNumber">Challenge 12</h2>
           <h3 className="challengeDescription">Checkout Form</h3>
         </div>
-        <div className="checkoutTable">
-          <h1 className="checkoutTitle">Checkout</h1>
-          <div role="alert" className="alert">
-            {error && <p className="error">{error}</p>}
-            {success && <p className="success">{success}</p>}
-          </div>
-          <div className="checkoutInfo">
-            <div className="cart">
-              <div className="cartHeader">
-                <h2>Cart</h2>
-                <h2>4</h2>
-              </div>
-              <div className="cartItem">
-                <p className="itemNumber">Item 1</p>
-                <p className="itemPrice">$5</p>
-              </div>
-              <div className="cartItem">
-                <p className="itemNumber">Item 2</p>
-                <p className="itemPrice">$10</p>
-              </div>
-              <div className="cartItem">
-                <p className="itemNumber">Item 3</p>
-                <p className="itemPrice">$7</p>
-              </div>
-              <div className="cartItem">
-                <p className="itemNumber">Item 4</p>
-                <p className="itemPrice">$2</p>
-              </div>
-              <div className="cartTotal">
-                <p className="totalHeader">Total</p>
-                <p className="totalPrice">$24</p>
-              </div>
+        {success ? (
+          <div className="checkoutTable">
+            <h1 className="checkoutTitle">Checkout</h1>
+            <div role="alert" className="alert">
+              {error && <p className="error">{error}</p>}
             </div>
-            <form className="checkoutForm" onSubmit={this.handleSubmit}>
-              <div className="shippingInputs">
-                <h2>Shipping</h2>
-                <div className="shippingNameInputs">
-                  <input
-                    type="text"
-                    name="shippingFirstName"
-                    id="shippingFirstName"
-                    maxLength="20"
-                    minLength="2"
-                    placeholder="First Name"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="shippingLastName"
-                    id="shippingLastName"
-                    maxLength="20"
-                    minLength="2"
-                    placeholder="Last Name"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-                <div className="streetAddressInput">
-                  <input
-                    type="text"
-                    name="streetAddress"
-                    id="streetAddress"
-                    placeholder="Street Address"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-                <div className="cityStateZipcodeInputs">
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    placeholder="City"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="state"
-                    id="state"
-                    placeholder="State"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="number"
-                    name="zipcode"
-                    id="zipcode"
-                    placeholder="Zipcode"
-                    maxLength="5"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-                <div className="emailPhoneInputs">
-                  <input
-                    type="email"
-                    name="email"
-                    id="shippingEmail"
-                    placeholder="Email"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="number"
-                    name="phone"
-                    id="phone"
-                    placeholder="Phone Number"
-                    maxLength="10"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="billingInputs">
-                <h2>Billing</h2>
-                <div className="billingNameInputs">
-                  <input
-                    type="text"
-                    name="billingFirstName"
-                    id="billingFirstName"
-                    maxLength="20"
-                    minLength="2"
-                    placeholder="First Name"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="billingLastName"
-                    id="billingLastName"
-                    maxLength="20"
-                    minLength="2"
-                    placeholder="Last Name"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-                <div className="cardNumberInput">
-                  <input
-                    type="number"
-                    name="cardNumber"
-                    id="cardNumber"
-                    placeholder="Credit Card Number"
-                    maxLength="16"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-                <div className="CVCExpirationsInputs">
-                  <input
-                    type="number"
-                    name="CVC"
-                    id="CVC"
-                    placeholder="CVC"
-                    maxLength="3"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="number"
-                    name="expirationMonth"
-                    id="expirationMonth"
-                    placeholder="MM"
-                    maxLength="2"
-                    aria-required="true"
-                    required
-                  />
-                  <input
-                    type="number"
-                    name="expirationYear"
-                    id="expirationYear"
-                    placeholder="YY"
-                    maxLength="2"
-                    aria-required="true"
-                    required
-                  />
-                </div>
-                <div className="cardTypes">
-                  <FontAwesomeIcon icon={faCcVisa} className="faIcon visa" />
-                  <FontAwesomeIcon
-                    icon={faCcMastercard}
-                    className="faIcon mastercard"
-                  />
-                  <FontAwesomeIcon icon={faCcAmex} className="faIcon amex" />
-                  <FontAwesomeIcon
-                    icon={faCcDiscover}
-                    className="faIcon discover"
-                  />
-                </div>
-              </div>
+            <form
+              className="checkoutForm"
+              id="formSuccess"
+              onSubmit={this.handleReset}
+            >
+              <p className="success">Thanks for ordering!</p>
               <div className="buttons">
                 <button type="submit" className="primary">
-                  Checkout
+                  Order Again
                 </button>
               </div>
             </form>
           </div>
-        </div>
+        ) : (
+          <div className="checkoutTable">
+            <h1 className="checkoutTitle">Checkout</h1>
+            <div role="alert" className="alert">
+              {error && <p className="error">{error}</p>}
+            </div>
+            <div className="checkoutInfo">
+              <div className="cart">
+                <div className="cartHeader">
+                  <h2>Cart</h2>
+                </div>
+                <div className="cartItem">
+                  <p className="itemNumber">Item 1</p>
+                  <p className="itemPrice">$5</p>
+                </div>
+                <div className="cartItem">
+                  <p className="itemNumber">Item 2</p>
+                  <p className="itemPrice">$10</p>
+                </div>
+                <div className="cartItem">
+                  <p className="itemNumber">Item 3</p>
+                  <p className="itemPrice">$7</p>
+                </div>
+                <div className="cartItem">
+                  <p className="itemNumber">Item 4</p>
+                  <p className="itemPrice">$2</p>
+                </div>
+                <div className="cartTotal">
+                  <p className="totalHeader">Total</p>
+                  <p className="totalPrice">$24</p>
+                </div>
+              </div>
+              <form className="checkoutForm" onSubmit={this.handleSubmit}>
+                <div className="shippingInputs">
+                  <h2>Shipping</h2>
+                  <div className="shippingNameInputs">
+                    <input
+                      type="text"
+                      name="shippingFirstName"
+                      id="shippingFirstName"
+                      maxLength="20"
+                      minLength="2"
+                      placeholder="First Name"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="shippingLastName"
+                      id="shippingLastName"
+                      maxLength="20"
+                      minLength="2"
+                      placeholder="Last Name"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                  <div className="streetAddressInput">
+                    <input
+                      type="text"
+                      name="streetAddress"
+                      id="streetAddress"
+                      placeholder="Street Address"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                  <div className="cityStateZipcodeInputs">
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="City"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      placeholder="State"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="number"
+                      name="zipcode"
+                      id="zipcode"
+                      placeholder="Zipcode"
+                      maxLength="5"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                  <div className="emailPhoneInputs">
+                    <input
+                      type="email"
+                      name="email"
+                      id="shippingEmail"
+                      placeholder="Email"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="number"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone Number"
+                      maxLength="10"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="billingInputs">
+                  <h2>Billing</h2>
+                  <div className="billingNameInputs">
+                    <input
+                      type="text"
+                      name="billingFirstName"
+                      id="billingFirstName"
+                      maxLength="20"
+                      minLength="2"
+                      placeholder="First Name"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="billingLastName"
+                      id="billingLastName"
+                      maxLength="20"
+                      minLength="2"
+                      placeholder="Last Name"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                  <div className="cardNumberInput">
+                    <input
+                      type="number"
+                      name="cardNumber"
+                      id="cardNumber"
+                      placeholder="Credit Card Number"
+                      maxLength="16"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                  <div className="CVCExpirationsInputs">
+                    <input
+                      type="number"
+                      name="CVC"
+                      id="CVC"
+                      placeholder="CVC"
+                      maxLength="3"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="number"
+                      name="expirationMonth"
+                      id="expirationMonth"
+                      placeholder="MM"
+                      maxLength="2"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="number"
+                      name="expirationYear"
+                      id="expirationYear"
+                      placeholder="YY"
+                      maxLength="2"
+                      aria-required="true"
+                      required
+                    />
+                  </div>
+                  <div className="cardTypes">
+                    <FontAwesomeIcon icon={faCcVisa} className="faIcon visa" />
+                    <FontAwesomeIcon
+                      icon={faCcMastercard}
+                      className="faIcon mastercard"
+                    />
+                    <FontAwesomeIcon icon={faCcAmex} className="faIcon amex" />
+                    <FontAwesomeIcon
+                      icon={faCcDiscover}
+                      className="faIcon discover"
+                    />
+                  </div>
+                </div>
+                <div className="buttons">
+                  <button type="submit" className="primary">
+                    Checkout
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
       </section>
     );
   }

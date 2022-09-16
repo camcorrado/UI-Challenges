@@ -9,15 +9,16 @@ export default class Challenge18 extends Component {
   handleSubmit = (ev) => {
     ev.preventDefault();
 
-    const { firstName, lastName, email, message } = ev.target;
+    const { firstName18, lastName18, email18, message18 } = ev.target;
+
+    firstName18.value = "";
+    lastName18.value = "";
+    email18.value = "";
+    message18.value = "";
 
     this.setState({
       success: true,
     });
-    firstName.value = "";
-    lastName.value = "";
-    email.value = "";
-    message.value = "";
   };
 
   handleReset = (ev) => {

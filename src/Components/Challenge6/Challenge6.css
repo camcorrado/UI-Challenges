@@ -155,7 +155,6 @@
 .hellMembershipButton > button:hover,
 .hellMembershipButton > button:focus {
   background-color: black;
-  color: darkred;
   border-bottom: 2px solid black;
 }
 

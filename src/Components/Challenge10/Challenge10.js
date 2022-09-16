@@ -94,7 +94,7 @@ export default class Challenge10 extends Component {
               onMouseLeave={() => this.setIsSpoiled(false)}
             >
               <p className="comingSoonHover">
-                (hover here to spoil the surprise)
+                (Pssst! Come over here to spoil the surprise!)
               </p>
             </div>
           )}
