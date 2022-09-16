@@ -25,7 +25,7 @@ export default class Challenge5 extends Component {
     const { message } = e.target;
     const { convo } = this.state;
     this.setState({
-      convo: [...convo, { sender: "user", message: message.value }],
+      convo: [{ sender: "user", message: message.value }, ...convo],
       disabled: true,
     });
 
@@ -52,7 +52,7 @@ export default class Challenge5 extends Component {
     let newRoboMessage;
     newRoboMessage = roboConvo[filteredConvos.length];
     this.setState({
-      convo: [...convo, { sender: "robot", message: newRoboMessage }],
+      convo: [{ sender: "robot", message: newRoboMessage }, ...convo],
       responding: false,
       disabled: false,
     });
@@ -68,11 +68,6 @@ export default class Challenge5 extends Component {
         </div>
         <div className="messenger">
           <div className="messages">
-            {convo.map((con, index) => (
-              <p key={index} className={con.sender}>
-                {con.message}
-              </p>
-            ))}
             {responding ? (
               <div className="textResponding">
                 <div className="yellow"></div>
@@ -83,6 +78,11 @@ export default class Challenge5 extends Component {
             ) : (
               <></>
             )}
+            {convo.map((con, index) => (
+              <p key={index} className={con.sender}>
+                {con.message}
+              </p>
+            ))}
           </div>
           <form onSubmit={this.handleSubmit}>
             <div className="messageInput">
