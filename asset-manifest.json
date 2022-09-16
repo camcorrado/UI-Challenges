@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/UI-Challenges/static/css/main.c2089d3c.css",
-    "main.js": "/UI-Challenges/static/js/main.f29f161f.js",
+    "main.css": "/UI-Challenges/static/css/main.5d0142d2.css",
+    "main.js": "/UI-Challenges/static/js/main.9e621493.js",
     "static/media/Raleway-VariableFont_wght.ttf": "/UI-Challenges/static/media/Raleway-VariableFont_wght.942638e66612b31fad1b.ttf",
     "static/media/Cinzel-VariableFont_wght.ttf": "/UI-Challenges/static/media/Cinzel-VariableFont_wght.f106898105d4ca9effaa.ttf",
     "index.html": "/UI-Challenges/index.html",
-    "main.c2089d3c.css.map": "/UI-Challenges/static/css/main.c2089d3c.css.map",
-    "main.f29f161f.js.map": "/UI-Challenges/static/js/main.f29f161f.js.map"
+    "main.5d0142d2.css.map": "/UI-Challenges/static/css/main.5d0142d2.css.map",
+    "main.9e621493.js.map": "/UI-Challenges/static/js/main.9e621493.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2089d3c.css",
-    "static/js/main.f29f161f.js"
+    "static/css/main.5d0142d2.css",
+    "static/js/main.9e621493.js"
   ]
 }
