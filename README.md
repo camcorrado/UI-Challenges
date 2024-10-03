@@ -18,10 +18,10 @@ These challenges were not only a great way to test my ability to create staple U
 
 ## Built With
 
-- React
-- JavaScript
+- React + Vite
+- HTML
 - CSS
-- Vite
+- JavaScript
 
 ## Live URL
 
