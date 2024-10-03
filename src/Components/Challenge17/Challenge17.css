@@ -1,0 +1,126 @@
+.homeMonitoringDashboard {
+  background-image: url("https://i.imgur.com/CkFsK1z.jpg");
+  background-size: 30%;
+  background-repeat: repeat;
+}
+
+.homeDashboardContainer {
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 500px;
+  margin: auto;
+  background-color: skyblue;
+  box-shadow: 2px 2px 5px black;
+}
+
+.todaysInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(140, 165, 165, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 20px;
+}
+
+.outsideTemp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insideTemp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tempDown,
+.tempUp {
+  font-size: 40px;
+  margin: auto 10px;
+  padding: 0px 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: rgba(140, 165, 165, 0.5);
+}
+
+.homeMonitoringDashboard h1,
+.degrees {
+  text-align: center;
+}
+
+.degrees {
+  font-size: 46px;
+}
+
+.interactiveButtons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  background-color: red;
+}
+
+.alarms,
+.lights {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.alarms {
+  padding-bottom: 5px;
+}
+
+.lights {
+  padding-top: 5px;
+}
+
+.lightOption,
+.alarmOption {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: rgba(140, 165, 165, 0.5);
+  border-radius: 100%;
+}
+
+.lightOption p,
+.alarmOption p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.lightOption .faIcon,
+.alarmOption .faIcon {
+  font-size: 30px;
+}

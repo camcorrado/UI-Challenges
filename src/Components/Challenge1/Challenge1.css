@@ -1,0 +1,84 @@
+.userProfile {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  margin: 0px 20px 10px 20px;
+  padding: 10px;
+  max-width: 500px;
+  background-color: #34adff;
+  background-image: -webkit-linear-gradient(-45deg, #4cbfff 31%, #6495ED 33%);
+  background-repeat: no-repeat;
+}
+
+.profileInfo > h1 {
+  font-size: 20px;
+}
+
+.profilePic {
+  margin: auto 10px auto auto;
+  width: auto;
+}
+
+.profilePic > img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileInfo h1,
+.profileInfo p,
+.socialsGallery,
+.profileInfo .portfolioLink {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.socialsContainerList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .faIcon {
+  font-size: 26px;
+  margin: auto 10px;
+  color: black;
+}
+
+.social .faIcon:hover {
+  color: cornflowerblue;
+  transition: 0.5s;
+}
+
+@media (min-width: 600px) {
+  .profilePic > img {
+    max-width: 200px;
+  }
+}

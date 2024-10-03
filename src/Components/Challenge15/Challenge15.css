@@ -1,0 +1,118 @@
+.boardingPass {
+  background-color: white;
+}
+
+.boardingPassContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px 0px;
+  background-color: white;
+  max-width: 500px;
+  background-color: #34adff;
+  background-image: -webkit-linear-gradient(
+    -180deg,
+    rgb(255, 255, 255) 60%,
+    #ff3a3a 40%
+  );
+  background-repeat: no-repeat;
+}
+
+.boardingPassPassenger {
+  flex-basis: 40%;
+}
+
+.boardingPassTripInfo {
+  flex-basis: 60%;
+}
+
+.boardingPassPassengerPic {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.boardingPassPassengerPic > img {
+  margin: 5px 10px;
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.boardingPassPassengerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.boardingPassPassengerInfo > h1,
+.boardingPassPassengerInfo > p {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.boardingPassPassengerInfo > h1 {
+  font-size: 18px;
+}
+
+.boardingPassPassengerInfo > p {
+  font-size: 16px;
+}
+
+.boardingPassTripInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.boardingPassTripDeparture,
+.boardingPassTripArrival {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto 10px;
+}
+
+.boardingPassTripDeparture div,
+.boardingPassTripArrival div {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 5px 2px;
+}
+
+.airport,
+.gate,
+.seat,
+.smile {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+
+.airport > *,
+.gate > *,
+.seat > * {
+  margin: 0px 5px;
+}
+
+.travelDetails {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 2px;
+}
+
+.travelDetailsIcon {
+  padding: 5px;
+}
+
+.pets,
+.class {
+  background-color: green;
+  border-radius: 100%;
+}

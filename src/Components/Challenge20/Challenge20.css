@@ -1,0 +1,65 @@
+.blogPostContainer {
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.bloggerInfo {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: cornflowerblue;
+  height: 100px;
+}
+
+.bloggerProfilePic > img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.bloggerInfo > h1 {
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.blogPostBody {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.blogPostBody > p {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.blogPostFooter {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.blogPostDate {
+  font-style: italic;
+}
+
+.blogPostLikeButton > button {
+  border: none;
+  background-color: white;
+}
+
+.blogPostLikeButton > button:focus {
+  outline: 0;
+}

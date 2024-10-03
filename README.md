@@ -1,9 +1,30 @@
-# React + Vite
+# UI Challenges
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A compilation of 20 UI challenges to help expand my knowledge of code and creativity.
 
-Currently, two official plugins are available:
+## Motivation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# UI-Challenges
+These challenges were not only a great way to test my ability to create staple UI elements, but also provoked me to think outside of the box with how these classics could be implemented. I hope you have just as much fun exploring these challenges as I did coding them!
+
+## Screenshots
+
+![Challenge 1](https://i.imgur.com/el5wquz.png)
+
+![Challenge 2](https://i.imgur.com/QVcksNx.png)
+
+![Challenge 3](https://i.imgur.com/H692DfX.png)
+
+![Challenge 16](https://i.imgur.com/SyP93qG.png)
+
+![Challenge 17](https://i.imgur.com/zWLHl2a.png)
+
+## Built With
+
+- React
+- JavaScript
+- CSS
+- Vite
+
+## Live URL
+
+https://camcorrado.github.io/UI-Challenges/

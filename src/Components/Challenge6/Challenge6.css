@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzel/v10/8vIU7ww63mVu7gtR-kwKxNvkNOjw-tbnfY3lC2xcZqTFUw.woff)
+    format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff)
+    format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.pricing {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hellMenu {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.hellMenu * {
+  font-family: "Raleway", serif;
+}
+
+.hellMenuTitle > h1 {
+  font-family: "Cinzel", serif;
+  color: red;
+  font-size: 42px;
+  margin: 0px;
+}
+
+.hellMenuSlogan {
+  margin-bottom: 20px;
+}
+
+.hellMemberships {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hellMembership {
+  border: 1px solid darkred;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: rgb(50, 50, 50);
+}
+
+.hellMembershipTitle {
+  border-image: linear-gradient(
+      90deg,
+      rgba(139, 0, 0, 0),
+      rgba(139, 0, 0, 1),
+      rgba(139, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 20px;
+}
+
+.hellMembershipPrice {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-image: linear-gradient(
+      90deg,
+      rgba(139, 0, 0, 0),
+      rgba(139, 0, 0, 1),
+      rgba(139, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+}
+
+.soul {
+  color: darkred;
+  font-size: 32px;
+  margin: 0px 2.5px;
+  margin-bottom: 10px;
+}
+
+.hellMembershipDescription {
+  margin-bottom: 20px;
+  border-image: linear-gradient(
+      90deg,
+      rgba(139, 0, 0, 0),
+      rgba(139, 0, 0, 1),
+      rgba(139, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hellMembershipDescription > p:first-child {
+  margin-bottom: 10px;
+}
+
+.hellMembershipFeatureName {
+  margin-bottom: 10px;
+}
+
+.hellMembershipFeatureDescription {
+  margin-bottom: 20px;
+}
+
+.hellMembershipButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hellMembershipButton > button {
+  height: 50px;
+  color: white;
+  background-color: darkred;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid rgb(25, 25, 25);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hellMembershipButton > button:hover {
+  background-color: rgb(220, 0, 0);
+  border-bottom: 2px solid black;
+}
+
+.hellMembershipButton > button:focus {
+  background-color: black;
+  border-bottom: 2px solid black;
+  transform: scale(0.98); 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .hellMemberships {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hellMembership {
+    flex-basis: 33%;
+    max-width: 666px;
+    margin-right: 20px;
+  }
+
+  .hellMembership:last-child {
+    margin-right: 0px;
+  }
+
+  .hellMembershipDescription {
+    min-height: 130px;
+  }
+
+  .hellMembershipButton {
+    height: 100%;
+  }
+}

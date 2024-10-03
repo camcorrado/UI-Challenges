@@ -1,0 +1,37 @@
+.galleryContainer {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  margin: auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+.gallery h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.galleryImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonContainer {
+  width: 120px;
+  height: 120px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.gallery a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
