@@ -8,15 +8,13 @@ These challenges were not only a great way to test my ability to create staple U
 
 ## Screenshots
 
-![Challenge 1](https://i.imgur.com/el5wquz.png)
-
-![Challenge 2](https://i.imgur.com/QVcksNx.png)
+![Challenge 1](https://i.imgur.com/ObhcIxJ.png)
 
 ![Challenge 3](https://i.imgur.com/H692DfX.png)
 
 ![Challenge 16](https://i.imgur.com/SyP93qG.png)
 
-![Challenge 17](https://i.imgur.com/zWLHl2a.png)
+![Challenge 17](https://i.imgur.com/PR6KZg7.png)
 
 ## Built With
 
