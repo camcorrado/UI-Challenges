@@ -22,6 +22,7 @@ These challenges were not only a great way to test my ability to create staple U
 - HTML
 - CSS
 - JavaScript
+- Adobe Creative Suite
 
 ## Live URL
 
